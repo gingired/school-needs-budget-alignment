@@ -39,7 +39,7 @@ const prototypes: Array<[string,string,string,string,number,number,number,number
   ['CAV-004','Queens Row Elementary School','Bacoor City','Region IV-A',1010,26,26,34,34,85,80,false],
 ]
 /** All school names displayed are explicitly labeled as samples; all metrics are invented. */
-export const schools: School[] = prototypes.map(([id,name,division,region,enrollment,classrooms,requiredClassrooms,teachers,requiredTeachers,literacy,numeracy,facilityGap])=>{
+export const schools: School[] = prototypes.map(([id,,division,region,enrollment,classrooms,requiredClassrooms,teachers,requiredTeachers,literacy,numeracy,facilityGap])=>{
   const needs: Need[]=[]
   if (classrooms<requiredClassrooms) needs.push('Classrooms')
   if (teachers<requiredTeachers) needs.push('Teaching personnel')
